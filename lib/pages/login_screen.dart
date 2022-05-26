@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../utils/app_colour.dart';
 import '../utils/controller_object.dart';
 import '../utils/routes.dart';
+import 'bus_list_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -166,12 +167,13 @@ class _SignInScreenState extends State<SignInScreen> {
                           child: ElevatedButton(
                             onPressed: () async {
                               if (authController.formKey.currentState!.validate()) {
-                                bool success = await authController.login();
-                                if (success) {
-                                  // authController.isLoggedIn.value = true;
-                                  Get.offAllNamed(Routes.home);
-                                  // Get.to(() => HomePage());
-                                }
+                                // bool success = await authController.login();
+                                // if (success) {
+                                //   // authController.isLoggedIn.value = true;
+                                //   Get.offAllNamed(Routes.home);
+                                //   // Get.to(() => HomePage());
+                                // }
+                                Get.to(() => BusList());
                               }
                             },
                             child: Text(
@@ -185,7 +187,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               shape:
                                   MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(24.0),
+                                  borderRadius: BorderRadius.circular(10.0),
                                   side: const BorderSide(color: AppColors.primary),
                                 ),
                               ),
