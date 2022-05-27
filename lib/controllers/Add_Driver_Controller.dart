@@ -11,7 +11,6 @@ class AddDriverController extends GetxController {
 
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  TextEditingController notesController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey();
   RxList<Buslist> buslist = <Buslist>[].obs;
 

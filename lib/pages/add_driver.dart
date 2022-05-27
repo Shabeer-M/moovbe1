@@ -35,7 +35,7 @@ class AddDriver extends StatelessWidget {
                   children: [
                     TextFormField(
                       showCursor: true,
-                      controller: authController.userNameController,
+                      controller: driverController.usernameController,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
                         filled: true,
@@ -67,7 +67,7 @@ class AddDriver extends StatelessWidget {
                     ),SizedBox(height: 10,),
                     TextFormField(
                       showCursor: true,
-                      controller: authController.userNameController,
+                      controller: driverController.passwordController,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
                         filled: true,
